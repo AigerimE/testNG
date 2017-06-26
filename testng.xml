@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "TestNG-Suite" parallel = "tests" thread-count = "2">
+
+	<test name = "TestNG- Chrome Test">
+		<parameter name = "UserName" value ="abc1234"/>
+		<parameter name = "Password" value = "pwd12345"/>
+		<parameter name = "browser" value = "chrome"/>
+		
+		<classes>
+			<class name = "testngselenium.GoogleSearchSelenium"/>
+		</classes>
+	</test>
+
+	<test name = "TestNG- Firefox Test">
+		<parameter name = "UserName" value ="abc1234"/>
+		<parameter name = "Password" value = "pwd12345"/>
+		<parameter name = "browser" value = "firefox"/>
+		
+		<classes>
+			<class name = "testngselenium.GoogleSearchSelenium"/>
+		</classes>
+		
+		
+		<!-- 
+		<packages>
+			<package name=".*"/>
+			
+		</packages>
+		
+		
+		<groups>
+			<run>
+				<include name="pets"/>
+			</run>
+		</groups>
+		
+		<classes>
+		
+			<class name = "testngtests.TestNGAnnotations"/>
+			<class name = "testngtests.TestNGAssertions"/>
+			<class name = "testngtests.TestNGDependencyTest"/>
+			<class name = "testngtests.TestNGPrioritizing"/>
+			<class name = "testngtests.TestNGGroups"/>
+		
+		</classes>
+		
+		 -->
+	</test>
+</suite>
