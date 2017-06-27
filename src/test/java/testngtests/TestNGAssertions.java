@@ -10,6 +10,7 @@ public class TestNGAssertions {
 	  System.out.println("Before hard assertion");
 	  Assert.assertEquals(10, 10);
 	  System.out.println("After hard assertion");
+	  System.out.println("yeah do your thing");
   }
   
   @Test
